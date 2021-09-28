@@ -1,0 +1,113 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-list__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: var(--all-timing-animation);
+  transition-timing-function: var(--all-transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header {
+  .conteiner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-right__item:not(:last-child),
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-right__auth {
+  display: flex;
+}
+
+.header-right {
+  margin-left: auto;
+}
+
+.header-list__item {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  .header-list__item & {
+    color: var(--accent-color);
+  }
+}
+
+.header-list__item {
+  .current {
+    color: var(--accent-color);
+  }
+}
+
+.header-right__tel,
+.header-right__mail {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: var(--all-timing-animation);
+  transition-timing-function: var(--all-transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo-icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: var(--all-timing-animation);
+  transition-timing-function: var(--all-transition-timing-function);
+  .header-right__tel:hover &,
+  .header-right__mail:focus &,
+  .header-right__tel:focus &,
+  .header-right__mail:hover & {
+    fill: var(--accent-color);
+  }
+}
