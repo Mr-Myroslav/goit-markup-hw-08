@@ -22,7 +22,11 @@
                 <a href="./index.html" lang="en" class="header__logo logo link">
                     <span class="logo__accent-txt-color">Web</span>Studio
                 </a>
-            
+                <button class="header-menu-open" data-menu-open>
+                    <svg class="menu-icon" width="24" height="16">
+                        <use href="./img/sprite.svg#icon-menu-header"></use>
+                    </svg>
+                </button>
                 <ul class="header-list list">
                     <li class="header-list__item">
                         <a href="./index.html" class="header-list__link link current">Студия</a>
@@ -34,8 +38,7 @@
                         <a href="" class="header-list__link link">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="header-right">
+                <div class="header-right">
                 <ul class="header-right__auth list">
                     <li class="header-right__item list">
                         <a class="header-right__mail link" href="mailto:info@devstudio.com">
@@ -54,6 +57,50 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
+            </div>
+            </nav>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-relative">
+                <button class="menu-close" data-menu-close>
+                    <svg class="logo-icon-close-menu" width="18" height="18">
+                        <use href="./img/sprite.svg#close_icon_menu"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-list__item">
+                        <a href="./index.html" class="mob-menu-list__link link current">Студия</a>
+                    </li>
+                    <li class="mob-menu-list__item">
+                        <a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-list__item">
+                        <a href="" class="mob-menu-list__link link">Контакты</a>
+                </ul>
+                <div class="mob-menu-bottom-box">
+                    <ul class="mob-menu-auth-list list">
+                        <li class="mob-menu-auth-list__item">
+                            <a class="mob-menu-auth-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-auth-list__item list">
+                            <a class="mob-menu-auth-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social-list list">
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link current">Instagram</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">Twitter</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">Facebook</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -115,17 +162,35 @@
                 class="we-do-title">Чем мы занимаемся</h2>
                 <ul class="list we-do-list">
                     <li class="we-do-list__item">
-                        <img src="./img/what-do-we-do-section/algorytm-on-the-table.jpg" alt="алгоритм на столе" width="370" height="294">
+                        <picture>
+                            <source srcset="./img/what-do-we-do-section/algorytm-on-the-table.jpg 1x, ./img/what-do-we-do-section/algorytm-on-the-table-2x-min.jpg 2x"
+                                media="(min-width:1200px)">
+                        <img src="./img/what-what-do-we-do-section/algorytm-on-the-table.jpg" alt="алгоритм на столе" width="370" height="294"
+                                srcset="./img/what-do-we-do-section/algorytm-on-the-table.jpg 1x, ./img/what-do-we-do-section/algorytm-on-the-table-2x-min.jpg 2x">
+                        </picture>
+                        
                         <h3 class="we-do-list__text">Десктопные приложения</h3>
                     </li>
 
                     <li class="we-do-list__item">
-                        <img src="./img/what-do-we-do-section/mobile-design.jpg" alt="мобильний дизайн" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="./img/what-do-we-do-section/mobile-design.jpg 1x, ./img/what-do-we-do-section/mobile-design-2x-min.jpg 2x"
+                                media="(min-width:1200px)">
+                            <img src="./img/what-what-do-we-do-section/mobile-design.jpg" alt="алгоритм на столе" width="370" height="294"
+                                srcset="./img/what-do-we-do-section/mobile-design.jpg 1x, ./img/what-do-we-do-section/mobile-design-2x-min.jpg 2x">
+                        </picture>
                         <h3 class="we-do-list__text">Мобильные приложения</h3>
                     </li>
 
                     <li class= "we-do-list__item">
-                        <img src="./img/what-do-we-do-section/choise-of-color.jpg" alt="подбор цвета" width="370" height="294">
+                        <picture>
+                            <source
+                                srcset="./img/what-do-we-do-section/choise-of-color.jpg 1x, ./img/what-do-we-do-section/choise-of-color-2x-min.jpg 2x"
+                                media="(min-width:1200px)">
+                            <img src="./img/what-do-we-do-section/choise-of-color.jpg" alt="алгоритм на столе" width="370" height="294"
+                                srcset="./img/what-do-we-do-section/choise-of-color.jpg 1x, ./img/what-do-we-do-section/choise-of-color-2x-min.jpg 2x">
+                        </picture>
                         <h3 class="we-do-list__text">Дизайнерские решения</h3>
                     </li>
                 </ul>
@@ -136,7 +201,16 @@
                 <h2 class="our-team-main-title">Наша команда</h2>
                 <ul class="our-team-list list">
                     <li class="our-team-card">
-                            <img src="./img/our-team-section/demianenko.jpg" alt="Игорь Демьяненко фото" width="270" height="260">
+                            <picture>
+                                <source srcset="./img/our-team-section/demianenko.jpg 1x, ./img/our-team-section/demianenko-2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source srcset="./img/our-team-section/demianenko-tab-1x-min.jpg 1x, ./img/our-team-section/demianenko-tab-2x-min.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source srcset="./img/our-team-section/demianenko-mob-1x-min.jpg 1x, ./img/our-team-section/demianenko-mob-2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                    <img src="./img/our-team-section/demianenko.jpg" alt="Игорь Демьяненко фото" width="270" height="260"
+                                        srcset="./img/our-team-section/demianenko.jpg 1x, ./img/our-team-section/demianenko-2x.jpg 2x">
+                            </picture>
                             <div class="our-team-content">
                                 <h3 class="our-team-name">Игорь Демьяненко</h3>
                                 <p lang="en" class="our-team-jobs-name">Product Designer</p>
@@ -178,7 +252,18 @@
 
                     <li class="our-team-card">
                         
-                            <img src="./img/our-team-section/repina.jpg" alt="Ольга Репина фото" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/our-team-section/repina.jpg 1x, ./img/our-team-section/repina-desk-2x-min.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./img/our-team-section/repina-tab-1x-min.jpg 1x, ./img/our-team-section/repina-tab-2x-min.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./img/our-team-section/repina-mob-1x-min.jpg 1x, ./img/our-team-section/repina-mob-2x-min.jpg 2x"
+                                media="(min-width:480px)">
+                            <img src="./img/our-team-section/repina.jpg" alt="Игорь Демьяненко фото" width="270" height="260"
+                                srcset="./img/our-team-section/repina.jpg 1x, ./img/our-team-section/repina-desk-2x-min.jpg 2x">
+                        </picture>
                             <div class="our-team-content">
                             <h3 class="our-team-name">Ольга Репина </h3>
                             <p lang="en" class="our-team-jobs-name">Frontend Developer</p>
@@ -218,8 +303,18 @@
                     </li>
 
                     <li class="our-team-card">
-                        
-                            <img src="./img/our-team-section/tarasov.jpg" alt="Николай Тарасов фото" width="270" height="260">
+                            <picture>
+                                <source srcset="./img/our-team-section/tarasov.jpg 1x, ./img/our-team-section/tarasov-desk-2x-min.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./img/our-team-section/tarasov-tab-1x-min.jpg 1x, ./img/our-team-section/tarasov-tab-2x-min.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/our-team-section/tarasov-mob-1x-min.jpg 1x, ./img/our-team-section/tarasov-desk-2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./img/our-team-section/tarasov.jpg" alt="Игорь Демьяненко фото" width="270" height="260"
+                                    srcset="./img/our-team-section/tarasov.jpg 1x, ./img/our-team-section/tarasov-desk-2x-min.jpg 2x">
+                            </picture>
                             <div class="our-team-content">
                             <h3 class="our-team-name">Николай Тарасов</h3>
                             <p lang="en" class="our-team-jobs-name">Marketing</p>
@@ -259,7 +354,18 @@
                     </li >
 
                     <li class="our-team-card">
-                            <img src="./img/our-team-section/ermakov.jpg" alt="Михаил Ермаков фото" width="270" height="260">
+                        <picture>
+                            <source srcset="./img/our-team-section/ermakov.jpg 1x, ./img/our-team-section/ermakov-desk-2x-min.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./img/our-team-section/ermakov-tab-1x-min.jpg 1x, ./img/our-team-section/ermakov-tab-2x-min.jpg 2x"
+                                media="(min-width:768px)">
+                            <source
+                                srcset="./img/our-team-section/ermakov-mob-1x-min.jpg 1x, ./img/our-team-section/ermakov-mob-1x-min.jpg 2x"
+                                media="(min-width:480px)">
+                            <img src="./img/our-team-section/ermakov.jpg" alt="Игорь Демьяненко фото" width="270" height="260"
+                                srcset="./img/our-team-section/ermakov.jpg 1x, ./img/our-team-section/ermakov-desk-2x-min.jpg 2x">
+                        </picture>
                             <div class="our-team-content">
                             <h3 class="our-team-name">Михаил Ермаков</h3>
                             <p lang="en" class="our-team-jobs-name">UI Designer</p>
@@ -360,7 +466,7 @@
                 <a href="./index.html" lang="en" class="logo logo_color_white link">
                     <span class="logo__accent-txt-color">Web</span>Studio
                 </a>
-                <address>
+                <address class="address-footer">
                     <ul class="list">
                         <li class="footer-item"><a class="link location" href="https://goo.gl/maps/bqCm8uYe42ZfHNk9A" target="_blank"
                                 rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -466,12 +572,14 @@
                             <svg class="icon" width="11" height="8">
                                 <use href="./img/sprite.svg#icon-check"></use>
                             </svg>
-                        </span> Соглашаюсь с рассылкой и принимаю <a class="license" href="">  Условия договора</a></label>
+                        </span><span class="check-label-text">Соглашаюсь с рассылкой и принимаю <a class="license" href="">Условия договора</a></span> 
+                    </label>
                 </div>
                 <button class="btn-modal" type="button">Отправить</button>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html> 

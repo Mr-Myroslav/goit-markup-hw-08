@@ -1,7 +1,19 @@
 .filter-list {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+}
+
+.filter-item {
+  margin-top: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .filter-item:not(:last-child) {
@@ -51,18 +63,44 @@
 
 .content-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-betwen));
-  margin-left: calc(-1 * var(--card-betwen));
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-top: calc(-1 * var(--card-betwen));
+    margin-left: calc(-1 * var(--card-betwen));
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 }
 
 .content-card {
-  margin-left: var(--card-betwen);
-  margin-top: var(--card-betwen);
-  flex-basis: calc(100% / 3 - var(--card-betwen));
+  width: 100%;
+  height: auto;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    width: 354px;
+    margin-left: var(--card-betwen);
+    margin-top: var(--card-betwen);
+    flex-basis: calc(100% / 2 - var(--card-betwen));
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    flex-basis: calc(100% / 3 - var(--card-betwen));
+  }
 }
 
 .content-link {
+  .card-overlay {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   display: block;
   transition-property: background-color, box-shadow;
   transition-duration: var(--all-timing-animation);
@@ -106,8 +144,12 @@
 }
 
 .content-card-inside {
-  padding: 20px 24px 20px 24px;
-  background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
+  padding: 20px 24px 20px 24px;
+  background: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
 }

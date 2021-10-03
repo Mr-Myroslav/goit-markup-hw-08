@@ -22,38 +22,85 @@
                 <a href="./index.html" lang="en" class="header__logo logo link">
                     <span class="logo__accent-txt-color">Web</span>Studio
                 </a>
-    
+                <button class="header-menu-open" data-menu-open>
+                    <svg class="menu-icon" width="24" height="16">
+                        <use href="./img/sprite.svg#icon-menu-header"></use>
+                    </svg>
+                </button>
                 <ul class="header-list list">
                     <li class="header-list__item">
-                        <a href="./index.html" class="header-list__link link current">Студия</a>
+                        <a href="./index.html" class="header-list__link link ">Студия</a>
                     </li>
                     <li class="header-list__item">
-                        <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
+                        <a href="./portfolio.html" class="header-list__link link current">Портфолио</a>
                     </li>
                     <li class="header-list__item">
                         <a href="" class="header-list__link link">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="header-right">
-                <ul class="header-right__auth list">
-                    <li class="header-right__item list">
-                        <a class="header-right__mail link" href="mailto:info@devstudio.com">
-                            <svg class="logo-icon" width="16" height="12">
-                                <use href="./img/sprite.svg#icon-envelope"></use>
+                <div class="header-right">
+                    <ul class="header-right__auth list">
+                        <li class="header-right__item list">
+                            <a class="header-right__mail link" href="mailto:info@devstudio.com">
+                                <svg class="logo-icon" width="16" height="12">
+                                    <use href="./img/sprite.svg#icon-envelope"></use>
     
-                            </svg>
-                            info@devstudio.com
-                        </a>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="header-right__item">
+                            <a class="header-right__tel link" href="tel:+380961111111">
+                                <svg class="logo-icon" width="10" height="16">
+                                    <use href="./img/sprite.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-relative">
+                <button class="menu-close" data-menu-close>
+                    <svg class="logo-icon-close-menu" width="18" height="18">
+                        <use href="./img/sprite.svg#close_icon_menu"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-list__item">
+                        <a href="./index.html" class="mob-menu-list__link link current">Студия</a>
                     </li>
-                    <li class="header-right__item">
-                        <a class="header-right__tel link" href="tel:+380961111111">
-                            <svg class="logo-icon" width="10" height="16">
-                                <use href="./img/sprite.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                    <li class="mob-menu-list__item">
+                        <a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a>
                     </li>
+                    <li class="mob-menu-list__item">
+                        <a href="" class="mob-menu-list__link link">Контакты</a>
                 </ul>
+                <div class="mob-menu-bottom-box">
+                    <ul class="mob-menu-auth-list list">
+                        <li class="mob-menu-auth-list__item">
+                            <a class="mob-menu-auth-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-auth-list__item list">
+                            <a class="mob-menu-auth-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social-list list">
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link current">Instagram</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">Twitter</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">Facebook</a>
+                        </li>
+                        <li class="menu-social-list__item">
+                            <a href="#" lang="en" class="menu-social-list__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -73,7 +120,19 @@
                     <li class="content-card">
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/team-profile-on-screan.jpg" alt="команда на екране" width="370" height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio-page/team-profile-on-screan.jpg 1x, ./img/portfolio-page/team-profile-on-screan-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./img/portfolio-page/team-profile-on-screan-tab-1x-min.jpg 1x, ./img/portfolio-page/team-profile-on-screan-tab-1x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./img/portfolio-page/team-profile-on-screan-mob-1x-min.jpg 1x, ./img/portfolio-page/team-profile-on-screan-tab-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/team-profile-on-screan.jpg" alt="команда на екране" width="370" height="294"
+                                        srcset="./img/portfolio-page/team-profile-on-screan.jpg 1x, ./img/portfolio-page/team-profile-on-screan-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link">Технокряк это современная площадка распространения коронавируса. Компании
                                     используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -88,7 +147,19 @@
                     <li class="content-card" >
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/bascatbool.jpg" alt="баскетбол" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./img/portfolio-page/bascatbool.jpg 1x, ./img/portfolio-page/bascatbool-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./img/portfolio-page/bascatbool-tab-1x-min.jpg 1x, ./img/portfolio-page/bascatbool-tab-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./img/portfolio-page/bascatbool-mob-1x-min.jpg 1x, ./img/portfolio-page/bascatbool-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/bascatbool.jpg" alt="команда на екране" width="370" height="294"
+                                        srcset="./img/portfolio-page/bascatbool.jpg 1x, ./img/portfolio-page/bascatbool-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -101,7 +172,19 @@
                     <li class="content-card" >
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/shark-and-logo.jpg" alt="акула и логотип" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./img/portfolio-page/shark-and-logo.jpg 1x, ./img/portfolio-page/shark-and-logo-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./img/portfolio-page/shark-and-logo-tab-1x-min.jpg 1x, ./img/portfolio-page/shark-and-logo-tab-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./img/portfolio-page/shark-and-logo-mob-1x-min.jpg 1x, ./img/portfolio-page/shark-and-logo-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/shark-and-logo.jpg" alt="команда на екране" width="370" height="294"
+                                        srcset="./img/portfolio-page/shark-and-logo.jpg 1x, ./img/portfolio-page/shark-and-logo-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -114,7 +197,19 @@
                     <li class="content-card">
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/headphone.jpg" alt="наушники" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./img/portfolio-page/headphone.jpg 1x, ./img/portfolio-page/headphone-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./img/portfolio-page/headphone-tab-1x-min.jpg 1x, ./img/portfolio-page/headphone-tab-2x-min 2x"
+                                        media="(min-width:768px)" width="354" height="294">
+                                    <source
+                                        srcset="./img/portfolio-page/headphone-mob-1x-min.jpg 1x, ./img/portfolio-page/headphone-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/headphone.jpg" alt="команда на екране" width="370" height="294"
+                                        srcset="./img/portfolio-page/headphone.jpg 1x, ./img/portfolio-page/headphone-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -127,7 +222,18 @@
                     <li class="content-card">
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/two-box.jpg" alt="коробочки" width="370" height="294">
+                                <picture>
+                                <source srcset="./img/portfolio-page/two-box.jpg 1x, ./img/portfolio-page/two-box-desk-2x-min.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./img/portfolio-page/two-box-tab-1x-min.jpg 1x, ./img/portfolio-page/two-box-tab-2x-min.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/portfolio-page/two-box-mob-1x-min.jpg 1x, ./img/portfolio-page/two-box-mob-2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./img/portfolio-page/two-box.jpg" alt="команда на екране" width="370" height="294"
+                                    srcset="./img/portfolio-page/two-box.jpg 1x, ./img/portfolio-page/two-box-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -140,7 +246,18 @@
                     <li class="content-card">
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/monitor.jpg" alt="монитор" width="370" height="294">
+                                <picture>
+                                <source srcset="./img/portfolio-page/monitor.jpg 1x, ./img/portfolio-page/monitor-desk-2x-min.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./img/portfolio-page/monitor-tab-1x-min.jpg 1x, ./img/portfolio-page/monitor-tab-2x-min.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./img/portfolio-page/monitor-mob-1x-min.jpg 1x, ./img/portfolio-page/monitor-mob-2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./img/portfolio-page/monitor.jpg" alt="команда на екране" width="370" height="294"
+                                    srcset="./img/portfolio-page/monitor.jpg 1x, ./img/portfolio-page/monitor-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -153,7 +270,16 @@
                     <li class="content-card" >
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/magazin's-page.jpg" alt="страница журнала" width="370" height="294">
+                                <picture>
+                                    <source srcset="./img/portfolio-page/magazin's-page.jpg 1x, ./img/portfolio-page/magazin's-page-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source srcset="./img/portfolio-page/magazin's-page-tab-1x-min.jpg 1x, ./img/portfolio-page/magazin's-page-tab-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./img/portfolio-page/magazin's-page-mob-1x-min.jpg 1x, ./img/portfolio-page/magazin's-page-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/magazin's-page.jpg" alt="страница журнала" width="370" height="294"
+                                        srcset="./img/portfolio-page/magazin's-page.jpg 1x, ./img/portfolio-page/magazin's-page-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -166,7 +292,16 @@
                     <li class="content-card" >
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/tag.jpg" alt="етикетка" width="370" height="294">
+                                <picture>
+                                    <source srcset="./img/portfolio-page/tag.jpg 1x, ./img/portfolio-page/tag-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source srcset="./img/portfolio-page/tag-tab-1px-min.jpg 1x, ./img/portfolio-page/tag-tab-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./img/portfolio-page/tag-mob-1x-min.jpg 1x, ./img/portfolio-page/tag-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./img/portfolio-page/tag.jpg" alt="етикетка" width="370" height="294"
+                                        srcset="./img/portfolio-page/tag.jpg 1x, ./img/portfolio-page/tag-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -179,7 +314,16 @@
                     <li class="content-card">
                         <a class="content-link link" href="">
                             <div class="card-overlay">
-                                <img src="./img/portfolio-page/laptoop.jpg" alt="работа на ноутбуке" width="370" height="294">
+                                <picture>
+                                    <source srcset="./img/portfolio-page/laptoop.jpg 1x, ./img/portfolio-page/laptoop-desk-2x-min.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source srcset="./img/portfolio-page/laptoop-tab-1x-min.jpg 1x, ./img/portfolio-page/laptoop-tab-2x-min.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./img/portfolio-page/laptoop-mob-1x-min.jpg 1x, ./img/portfolio-page/laptoop-mob-2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                <img src="./img/portfolio-page/laptoop.jpg" alt="работа на ноутбуке" width="370" height="294"
+                                        srcset="./img/portfolio-page/laptoop.jpg 1x, ./img/portfolio-page/laptoop-desk-2x-min.jpg 2x">
+                                </picture>
                                 <p class="content-text-portfolio link"></p>
                             </div>
                             <div class="content-card-inside">
@@ -195,10 +339,10 @@
 <footer class="footer">
     <div class="conteiner footer-row">
         <div class="contacts-footer">
-            <a href="./index.html" lang="en" class="footer-logo link">
-                <span class="header-logo-accent">Web</span>Studio
+            <a href="./index.html" lang="en" class="logo logo_color_white link">
+                <span class="logo__accent-txt-color">Web</span>Studio
             </a>
-            <address>
+            <address class="address-footer">
                 <ul class="list">
                     <li class="footer-item"><a class="link location" href="https://goo.gl/maps/bqCm8uYe42ZfHNk9A"
                             target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -258,5 +402,60 @@
         </div>
     </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="btn-close" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+                <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" class="modal-form">
+            <div class="modal-form-field">
+                <label for="input-name" class="modal-form-label">Имя</label>
+                <span class="input-wrap">
+                    <input type="text" id="input-name" class="modal-form-input" placeholder="" name="modal-name">
+                    <svg class="modal-form-icon" width="12" height="12">
+                        <use href="./img/sprite.svg#icon-user"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="modal-form-field">
+                <label for="input-tel" class="modal-form-label">Телефон</label>
+                <span class="input-wrap">
+                    <input type="tel" id="input-tel" class="modal-form-input" placeholder="" name="modal-tel">
+                    <svg class="modal-form-icon" width="13" height="13">
+                        <use href="./img/sprite.svg#icon-tel"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="modal-form-field">
+                <label for="input-email" class="modal-form-label">Почта</label>
+                <span class="input-wrap">
+                    <input type="email" id="input-email" class="modal-form-input" placeholder="" name="modal-email">
+                    <svg class="modal-form-icon" width="15" height="12">
+                        <use href="./img/sprite.svg#icon-mail"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="modal-form-field">
+                <label for="comment" class="modal-form-label">Комментарий</label>
+                <textarea name="modal-comment" id="comment" placeholder="Введите текст"
+                    class="modal-comment"></textarea>
+            </div>
+            <div class="modal-form-field">
+                <input type="checkbox" id="check" name="policy" class="checkbox offscreen">
+                <label for="check" class="check-label">
+                    <span class="icon-check">
+                        <svg class="icon" width="11" height="8">
+                            <use href="./img/sprite.svg#icon-check"></use>
+                        </svg>
+                    </span> Соглашаюсь с рассылкой и принимаю <a class="license" href=""> Условия договора</a></label>
+            </div>
+            <button class="btn-modal" type="button">Отправить</button>
+        </form>
+    </div>
+</div>
+<script src="./js/menu.js"></script>
 </body>
 </html>
