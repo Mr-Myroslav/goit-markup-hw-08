@@ -386,6 +386,7 @@ img {
 }
 
 .mob-menu {
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -769,17 +770,17 @@ img {
 
 .our-team-main-title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .our-team-main-title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -870,6 +871,7 @@ img {
   .our-clients-title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -1189,12 +1191,18 @@ img {
 @media screen and (min-width: 768px) {
   .filter-list {
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
   }
 }
 
 .filter-item {
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .filter-item:not(:last-child) {
@@ -1288,7 +1296,9 @@ img {
 }
 
 .content-link {
+  width: 100%;
   display: block;
+  height: auto;
   transition-property: background-color, box-shadow;
   transition-duration: var(--all-timing-animation);
   transition-timing-function: var(--all-transition-timing-function);
@@ -1340,9 +1350,6 @@ img {
   padding: 20px 24px 20px 24px;
   background: #ffffff;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: normal;
 }
 
 .backdrop {

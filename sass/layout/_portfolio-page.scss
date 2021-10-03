@@ -5,12 +5,15 @@
   margin-bottom: 25px;
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
 .filter-item {
-  margin-top: 15px;
+  margin-bottom: 15px;
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -101,7 +104,9 @@
       height: auto;
     }
   }
+  width: 100%;
   display: block;
+  height: auto;
   transition-property: background-color, box-shadow;
   transition-duration: var(--all-timing-animation);
   transition-timing-function: var(--all-transition-timing-function);
@@ -149,7 +154,4 @@
   padding: 20px 24px 20px 24px;
   background: #ffffff;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: normal;
 }
